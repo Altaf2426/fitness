@@ -7,9 +7,11 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="demo" />
         <module name="eureka" />
+        <module name="gateway" />
       </profile>
-      <profile name="Annotation profile for aiservice" enabled="true">
+      <profile name="Annotation profile for demo" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
@@ -23,7 +25,6 @@
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="activityservice" target="25" />
-      <module name="demo" target="1.5" />
       <module name="eurekaserver" target="25" />
       <module name="userservice" target="25" />
     </bytecodeTargetLevel>
@@ -32,11 +33,12 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="activityservice" options="-parameters" />
       <module name="aiservice" options="-parameters" />
-      <module name="demo" options="" />
+      <module name="demo" options="-parameters" />
       <module name="demo (1)" options="-parameters" />
       <module name="demo (1) (com.example)" options="-parameters" />
       <module name="eureka" options="-parameters" />
       <module name="eurekaserver" options="-parameters" />
+      <module name="gateway" options="-parameters" />
       <module name="userservice" options="-parameters" />
     </option>
   </component>
